@@ -5,6 +5,7 @@ import { Feed } from './pages/feed';
 import { Teste } from './pages/HOOKS/useState';
 import { Teste2 } from './pages/HOOKS/useEffect';
 import { Teste3 } from './pages/HOOKS/useMemo';
+import { Teste4 } from './pages/HOOKS/useCallBack';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Route path="/teste" element={<Teste />} />
                 <Route path="/teste2" element={<Teste2 />} />
                 <Route path="/teste3" element={<Teste3 />} />
+                <Route path="/teste4" element={<Teste4 />} />
             </Routes>
         </Router>
     );
