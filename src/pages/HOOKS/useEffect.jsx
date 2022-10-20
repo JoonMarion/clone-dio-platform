@@ -4,7 +4,7 @@ const Teste2 = () => {
     const [name, setName] = useState('João');
 
     const handleChangeName = () => {
-        setName((prev) => (prev === 'João' ? 'Maria' : 'João'));
+        setName((prev) => (prev === 'João' ? 'Pedro' : 'João'));
     };
 
     useEffect(() => {
