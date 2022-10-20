@@ -4,6 +4,7 @@ import { Login } from './pages/login';
 import { Feed } from './pages/feed';
 import { Teste } from './pages/HOOKS/useState';
 import { Teste2 } from './pages/HOOKS/useEffect';
+import { Teste3 } from './pages/HOOKS/useMemo';
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/feed" element={<Feed />} />
                 <Route path="/teste" element={<Teste />} />
                 <Route path="/teste2" element={<Teste2 />} />
+                <Route path="/teste3" element={<Teste3 />} />
             </Routes>
         </Router>
     );
