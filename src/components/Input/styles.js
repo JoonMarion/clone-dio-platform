@@ -11,6 +11,13 @@ export const InputContainer = styled.div`
     margin-bottom: 20px;
 `;
 
+export const ErrorText = styled.p`
+    margin: 10px 0;
+    color: red;
+    font-size: 12px;
+    font-family: 'Open Sans'; ;
+`;
+
 export const IconContainer = styled.div`
     margin-right: 10px;
 `;
