@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button } from '../Button/index.jsx';
+import { Button } from '../Button/index';
 import logo from '../../assets/logo-dio.png';
-import { Container, Row, Wrapper, BuscaInputContainer, Menu, MenuRight, Input } from './styles.js';
+import { Container, Row, Wrapper, BuscaInputContainer, Menu, MenuRight, Input } from './styles';
 import { UserPicture } from '../Card/styles';
+import { IHeader } from './types';
 
-const Header = ({ autenticado }) => {
+const Header = ({ autenticado }: IHeader) => {
     return (
         <Wrapper>
             <Container>
