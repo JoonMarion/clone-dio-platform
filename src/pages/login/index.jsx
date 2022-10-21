@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { MdMail, MdLock } from 'react-icons/md';
 import { useForm } from 'react-hook-form';
 
@@ -8,28 +9,42 @@ import { Button } from '../../components/Button';
 import { Header } from '../../components/Header';
 import { Input } from '../../components/Input';
 
+import { api } from '../../services/api';
+
 import { Column, Container, CriarText, EsqueciText, Row, SubtitleLogin, Title, TitleLogin, Wrapper } from './styles';
 
 const schema = yup
     .object({
         email: yup.string().email('E-mail inválido. Inclua um "@".').required(),
-        password: yup.string().min(8, 'A sua senha deve conter no mínimo 8 caracteres.').required(),
+        password: yup.string().min(8, 'A senha contém no mínimo 8 caracteres.').required(),
     })
     .required();
 
 const Login = () => {
+    const navigate = useNavigate();
     const {
         control,
         handleSubmit,
-        formState: { errors, isValid },
+        formState: { errors },
     } = useForm({
         resolver: yupResolver(schema),
         mode: 'onChange',
     });
 
-    console.log(isValid, errors);
+    console.log(errors);
 
-    const onSubmit = (data) => console.log(data);
+    const onSubmit = async (formData) => {
+        try {
+            const { data } = await api.get(`users?email=${formData.email}&password=${formData.password}`);
+            if (data.length === 1) {
+                navigate('/feed');
+            } else {
+                alert('E-mail ou senha inválidos.');
+            }
+        } catch {
+            alert('Houve um erro, tente novamente mais tarde.');
+        }
+    };
 
     return (
         <>
