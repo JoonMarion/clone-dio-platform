@@ -82,7 +82,7 @@ const Login = () => {
                         </form>
                         <Row>
                             <EsqueciText>Esqueci minha senha</EsqueciText>
-                            <CriarText>Criar Conta</CriarText>
+                            <CriarText href="/register">Criar Conta</CriarText>
                         </Row>
                     </Wrapper>
                 </Column>
