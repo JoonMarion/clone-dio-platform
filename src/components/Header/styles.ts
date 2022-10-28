@@ -51,6 +51,7 @@ export const Menu = styled.a`
     font-family: 'Open Sans';
     font-style: normal;
     font-size: 18px;
+    font-weight: 700;
 
     line-height: 25px;
     color: #ffffff;
@@ -81,4 +82,5 @@ export const Input = styled.input`
     flex: 1;
     border: 0;
     color: #ffffff;
+    height: 100%;
 `;
