@@ -5,12 +5,24 @@ import { IButtonStyled } from './types';
 export const ButtonContainer = styled.button<IButtonStyled>`
     border-radius: 22px;
     position: relative;
-    background: #565656;
 
+    background: #565656;
+    font-size: 1rem;
     color: white;
+
     padding: 2px 10px;
     min-width: 120px;
     width: 100%;
+
+    cursor: pointer;
+
+    ${({ margin }) => {
+        if (margin) {
+            return css`
+                margin-right: ${margin};
+            `;
+        }
+    }}
 
     ${({ variant }) =>
         variant != 'primary' &&
