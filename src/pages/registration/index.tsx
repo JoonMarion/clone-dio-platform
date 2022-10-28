@@ -109,7 +109,7 @@ const Register = () => {
                             Termos de Uso da DIO.
                         </SubtitleTerms>
                         <HaveAccount>
-                            Já tenho conta. <Link href="/">Fazer login</Link>
+                            Já tenho conta. <Link href="/login">Fazer login</Link>
                         </HaveAccount>
                     </Wrapper>
                 </Column>
