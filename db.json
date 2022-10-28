@@ -1,22 +1,22 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "name": "John Doe",
-            "email": "johndoe@gmail.com",
-            "password": "12345678"
-        },
-        {
-            "id": 2,
-            "name": "Jane Doe",
-            "email": "janedoe@gmail.com",
-            "password": "12345678"
-        },
-        {
-            "id": 3,
-            "name": "João Mariano",
-            "email": "teste@teste.com",
-            "password": "12345678"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "name": "João Teste da Silva",
+      "email": "joaoteste@teste.com",
+      "password": "teste@teste",
+      "id": 2
+    },
+    {
+      "name": "Gabriel Duarte",
+      "email": "alesred@gmail.com",
+      "password": "teste@teste",
+      "id": 3
+    }
+  ]
 }
