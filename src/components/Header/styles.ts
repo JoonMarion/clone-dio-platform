@@ -26,7 +26,7 @@ export const Column = styled.div`
 export const Wrapper = styled.div`
     background-color: #151515;
     width: 100%;
-    height: 47px;
+    height: 70px;
 
     display: flex;
     justify-content: center;
@@ -61,7 +61,7 @@ export const Menu = styled.a`
 export const MenuRight = styled.a`
     font-family: 'Open Sans';
     font-style: normal;
-    font-size: 12px;
+    font-size: 1rem;
 
     line-height: 25px;
     color: #ffffff;

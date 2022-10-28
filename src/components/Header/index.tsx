@@ -4,13 +4,26 @@ import logo from '../../assets/logo-dio.png';
 import { Container, Row, Wrapper, BuscaInputContainer, Menu, MenuRight, Input } from './styles';
 import { UserPicture } from '../Card/styles';
 import { IHeader } from './types';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Header = ({ autenticado }: IHeader) => {
+    const navigate = useNavigate();
+
+    const handleClickSignIn = () => {
+        navigate('/login');
+    };
+
+    const handleClickRegister = () => {
+        navigate('/register');
+    };
+
     return (
         <Wrapper>
             <Container>
                 <Row>
-                    <img src={logo} alt="Logo" />
+                    <Link to="/">
+                        <img src={logo} alt="Logo" />
+                    </Link>
                     {autenticado ? (
                         <>
                             <BuscaInputContainer>
@@ -27,8 +40,8 @@ const Header = ({ autenticado }: IHeader) => {
                     ) : (
                         <>
                             <MenuRight href="/">Home</MenuRight>
-                            <Button title="Entrar" />
-                            <Button title="Cadastrar" />
+                            <Button title="Entrar" onClick={handleClickSignIn} margin="10px" />
+                            <Button title="Cadastrar" onClick={handleClickRegister} />
                         </>
                     )}
                 </Row>
