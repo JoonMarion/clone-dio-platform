@@ -40,7 +40,7 @@ const Header = ({ autenticado }: IHeader) => {
                     ) : (
                         <>
                             <MenuRight href="/">Home</MenuRight>
-                            <Button title="Entrar" onClick={handleClickSignIn} margin="10px" />
+                            <Button title="Entrar" onClick={handleClickSignIn} margin="0 10px 0 0" />
                             <Button title="Cadastrar" onClick={handleClickRegister} />
                         </>
                     )}
