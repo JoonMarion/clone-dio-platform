@@ -8,5 +8,5 @@ export interface IButton {
 
 export interface IButtonStyled {
     variant: string;
-    margin: string;
+    margin?: string;
 }

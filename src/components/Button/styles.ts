@@ -19,7 +19,7 @@ export const ButtonContainer = styled.button<IButtonStyled>`
     ${({ margin }) => {
         if (margin) {
             return css`
-                margin-right: ${margin};
+                margin: ${margin};
             `;
         }
     }}
